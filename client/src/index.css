@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+for input of type text and for type passowrd, this styling is required */
+input[type="text"] , input[type="password"] , input[type="email"] , input[type="number"],input[type="name"],textarea,input[type="tel"]{
+    @apply w-full border my-1 py-2 px-3 rounded-full ;  
+}
+textarea{
+    height:140px;
+}
+/*now default classes for button*/
+button{
+    @apply bg-gray-300;
+}
+button.primary{
+    background-color:#8E3E63;
+    @apply bg-primary p-2 w-full text-white rounded-full;
+}
